@@ -1,7 +1,12 @@
 Fdm::Application.routes.draw do
+  get "pages/atelier_cuisine"
+  get "pages/atelier_couture"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  root "static_page#home"
+ root "pages#index"
+  get 'pages/contact'
+  get "pages/sortie"
+  get "pages/fete_du_quartier"
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
